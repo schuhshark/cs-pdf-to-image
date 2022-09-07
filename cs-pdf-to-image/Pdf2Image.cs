@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -87,6 +87,8 @@ namespace cs_pdf_to_image
             converter.RenderingThreads = -1;
             converter.TextAlphaBit = -1;
             converter.TextAlphaBit = -1;
+            converter.ResolutionX = 300;
+            converter.ResolutionY = 300;
 
             converter.FitPage = true;
             converter.JPEGQuality = mPrintQuality; //80
